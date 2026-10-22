@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Регистрация — MIМастер</title><link rel="stylesheet" href="css/style.css"><script src="js/register.js" defer></script></head>
+<body class="register-body"><header class="site-header"><a class="logo" href="index.html">MI<span>Мастер</span></a><nav aria-label="Главное меню"><a href="index.html">Главная</a><a href="prices.html">Цены</a><a href="experience.html">Опыт и отзывы</a><a class="nav-cta active" href="register.html">Регистрация</a></nav></header>
+<main class="register-layout"><section class="register-aside"><p class="eyebrow">ЛИЧНЫЙ КАБИНЕТ</p><h1>Добро пожаловать в MIМастер</h1><p>Создайте демонстрационный аккаунт, чтобы ознакомиться с формой регистрации.</p><ul><li>Логин только латинскими буквами и цифрами</li><li>Пароль не короче 8 символов</li><li>Проверка полей перед отправкой</li></ul><p class="note">Эта версия не подключена к серверу и не создаёт настоящий аккаунт.</p></section>
+<section class="form-card"><p class="eyebrow">НОВЫЙ АККАУНТ</p><h2>Регистрация</h2><p class="form-subtitle">Заполните все поля ниже.</p>
+<form id="registerForm" novalidate>
+<label for="username">Имя пользователя</label><input id="username" name="username" type="text" autocomplete="username" placeholder="Например, MiMaster01" required minlength="3" maxlength="20" pattern="[A-Za-z][A-Za-z0-9_]{2,19}" aria-describedby="usernameHelp"><small id="usernameHelp">3–20 символов: латинские буквы, цифры и _. Первый символ — буква.</small>
+<label for="password">Пароль</label><input id="password" name="password" type="password" autocomplete="new-password" placeholder="Не менее 8 символов" required minlength="8"><small>Используйте не менее 8 символов.</small>
+<label for="confirmPassword">Повторите пароль</label><input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Введите пароль ещё раз" required minlength="8">
+<label class="check-row"><input id="agree" type="checkbox" required> <span>Я понимаю, что это демонстрационная форма.</span></label>
+<button class="button full-width" type="submit">Создать аккаунт</button><p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+</form><p class="small-print">Не вводите здесь настоящий или используемый на других сайтах пароль.</p></section></main>
+<footer><span>© 2026 MIМастер</span><span><a href="index.html">Вернуться на главную</a></span></footer></body></html>
